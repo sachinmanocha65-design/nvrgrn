@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevergreen Pools - Media Campaign Brief</title>
+    
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#005E7C',
+                            lightBlue: '#00A8E8',
+                            green: '#00A859',
+                            dark: '#111827'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #f3f4f6; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #005E7C, #00A859);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .funnel-step { position: relative; }
+        .funnel-step:not(:last-child):after {
+            content: '\f0da';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #cbd5e1;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .funnel-step:not(:last-child):after {
+                right: 50%;
+                top: auto;
+                bottom: -25px;
+                transform: translateX(50%) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+        
+        <!-- Header -->
+        <header class="glass-card rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between border-t-4 border-brand-green">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-brand-dark mb-2">Omnichannel Growth Strategy</h1>
+                <h2 class="text-xl text-gray-500 font-medium">Q3/Q4 Campaign Brief <span class="text-brand-lightBlue">|</span> <span class="font-bold text-brand-blue">Nevergreen Pools</span></h2>
+            </div>
+            <div class="mt-6 md:mt-0 text-right bg-blue-50 p-4 rounded-xl border border-blue-100">
+                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Total Monthly Budget</p>
+                <p class="text-4xl font-bold gradient-text">$13,500</p>
+            </div>
+        </header>
+
+        <!-- Strategy Funnel -->
+        <section class="glass-card rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fas fa-filter text-brand-lightBlue"></i> The Demand Generation Framework</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="funnel-step bg-gray-50 p-5 rounded-xl text-center border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-bullhorn"></i></div>
+                    <h4 class="font-bold text-gray-800">1. Awareness</h4>
+                    <p class="text-xs text-gray-500 mt-2">Build brand trust with local pool owners before they actively search.</p>
+                </div>
+                <div class="funnel-step bg-gray-50 p-5 rounded-xl text-center border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 text-brand-green rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-magnet"></i></div>
+                    <h4 class="font-bold text-gray-800">2. In-Market Capture</h4>
+                    <p class="text-xs text-gray-500 mt-2">Convert active buyers searching for pool repair and cleaning services.</p>
+                </div>
+                <div class="funnel-step bg-gray-50 p-5 rounded-xl text-center border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-sync-alt"></i></div>
+                    <h4 class="font-bold text-gray-800">3. Retargeting</h4>
+                    <p class="text-xs text-gray-500 mt-2">Bring back known prospects who showed interest but didn't convert.</p>
+                </div>
+                <div class="funnel-step bg-gray-50 p-5 rounded-xl text-center border border-gray-100">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-gem"></i></div>
+                    <h4 class="font-bold text-gray-800">4. Retention</h4>
+                    <p class="text-xs text-gray-500 mt-2">Maximize Lifetime Value (LTV) from existing customer base.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Platform Breakdown Tables -->
+        <div class="space-y-8">
+            
+            <!-- Google Ads Setup (Tabular) -->
+            <div class="glass-card rounded-2xl border-t-4 border-blue-500 overflow-hidden shadow-sm">
+                <div class="p-6 md:p-8 bg-white border-b border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <h3 class="text-2xl font-bold flex items-center gap-3"><i class="fab fa-google text-blue-500"></i> Google Ads Execution Plan</h3>
+                    <div class="text-left md:text-right">
+                        <span class="block text-sm text-gray-500 font-semibold uppercase tracking-wider">Platform Budget</span>
+                        <span class="text-2xl font-bold text-blue-600">$8,100 / mo</span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-200">
+                                <th class="p-4 font-semibold text-gray-700 w-1/4">Campaign & Budget</th>
+                                <th class="p-4 font-semibold text-gray-700 w-1/5">Ad Group / Setup</th>
+                                <th class="p-4 font-semibold text-gray-700 w-1/3">Keywords & Targeting</th>
+                                <th class="p-4 font-semibold text-gray-700">Strategic Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 bg-white">
+                            <!-- Campaign 1: Core Intent Search (Expanded) -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top border-l-4 border-blue-500 bg-blue-50/30" rowspan="4">
+                                    <span class="font-bold text-gray-800 block mb-1">Core Intent Search</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded mb-3">Search Network</span>
+                                    <span class="font-bold text-xl block text-gray-800">$4,860</span>
+                                    <span class="text-sm text-gray-500">36% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700 border-b border-gray-50">
+                                    <a href="https://docs.google.com/spreadsheets/d/1gCuzPWgRZI-kHWQmCMf9cl7ZquU4AxYMU22psQuS9vo/edit?gid=1949020736#gid=1949020736" target="_blank" class="text-brand-blue hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Ad Group: Pool Cleaning <i class="fas fa-external-link-alt text-[10px] ml-1"></i></a>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">
+                                    <p class="mb-1"><strong>Focus Keywords:</strong> "pool cleaning professional", "swimming pool cleaning service", "best pool cleaning service near me"</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1"><strong>CPC Range:</strong> $2.67 - $16.56</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">Capture users actively looking for routine cleaning & maintenance.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top font-bold text-gray-700 border-b border-gray-50">
+                                    <a href="https://docs.google.com/spreadsheets/d/1gCuzPWgRZI-kHWQmCMf9cl7ZquU4AxYMU22psQuS9vo/edit?gid=1949020736#gid=1949020736" target="_blank" class="text-brand-blue hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Ad Group: Pool Heater <i class="fas fa-external-link-alt text-[10px] ml-1"></i></a>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">
+                                    <p class="mb-1"><strong>Focus Keywords:</strong> "swimming pool heater replacement", "pool heater maintenance"</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1"><strong>CPC Range:</strong> $1.09 - $26.41</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">High-ticket conversions targeting failing equipment and upgrades.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top font-bold text-gray-700 border-b border-gray-50">
+                                    <a href="https://docs.google.com/spreadsheets/d/1gCuzPWgRZI-kHWQmCMf9cl7ZquU4AxYMU22psQuS9vo/edit?gid=1949020736#gid=1949020736" target="_blank" class="text-brand-blue hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Ad Group: Pool Repair <i class="fas fa-external-link-alt text-[10px] ml-1"></i></a>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">
+                                    <p class="mb-1"><strong>Focus Keywords:</strong> "swimming pool repair near me", "commercial pool service near me"</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1"><strong>CPC Range:</strong> $4.31 - $41.34</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">Target urgent repair needs for residential and commercial pools.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    <a href="https://docs.google.com/spreadsheets/d/1gCuzPWgRZI-kHWQmCMf9cl7ZquU4AxYMU22psQuS9vo/edit?gid=1949020736#gid=1949020736" target="_blank" class="text-brand-blue hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Ad Group: Pool Draining <i class="fas fa-external-link-alt text-[10px] ml-1"></i></a>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-1"><strong>Focus Keywords:</strong> "pool draining services near me"</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1"><strong>Search Vol:</strong> 50/mo</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Niche service capturing highly specific maintenance requirements.</td>
+                            </tr>
+
+                            <!-- Campaign 2: Performance Max -->
+                            <tr class="hover:bg-gray-50 transition-colors border-t border-gray-200">
+                                <td class="p-4 align-top border-l-4 border-purple-500 bg-purple-50/20">
+                                    <span class="font-bold text-gray-800 block mb-1">Retargeting + Signals</span>
+                                    <span class="inline-block px-2 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded mb-3">Performance Max</span>
+                                    <span class="font-bold text-xl block text-gray-800">$2,565</span>
+                                    <span class="text-sm text-gray-500">19% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    Omnichannel AI Setup
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-1"><strong>Placements:</strong> Search, Display, YouTube, Maps, Gmail.</p>
+                                    <p><strong>Audience Signals:</strong> Past site visitors, custom intent segments.</p>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Automated retargeting to stay top-of-mind and discover new high-intent users actively comparing competitors.</td>
+                            </tr>
+
+                            <!-- Campaign 3: Brand Defense -->
+                            <tr class="hover:bg-gray-50 transition-colors border-t border-gray-200">
+                                <td class="p-4 align-top border-l-4 border-gray-400 bg-gray-50/50">
+                                    <span class="font-bold text-gray-800 block mb-1">Brand Defense</span>
+                                    <span class="inline-block px-2 py-1 bg-gray-200 text-gray-800 text-xs font-bold rounded mb-3">Search Network</span>
+                                    <span class="font-bold text-xl block text-gray-800">$675</span>
+                                    <span class="text-sm text-gray-500">5% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    <a href="https://docs.google.com/spreadsheets/d/1gCuzPWgRZI-kHWQmCMf9cl7ZquU4AxYMU22psQuS9vo/edit?gid=1949020736#gid=1949020736" target="_blank" class="text-brand-blue hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Ad Group: Brand Exact <i class="fas fa-external-link-alt text-[10px] ml-1"></i></a>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-1"><strong>Focus Keywords:</strong> "nevergreen pools", "nevergreen pool service"</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1"><strong>CPC Range:</strong> $3.61 - $15.70</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Protect brand searches to ensure visibility above competitors and capture direct referrals efficiently.</td>
+                            </tr>
+
+                            <!-- Campaign 4: LSA Test -->
+                            <tr class="bg-green-50 hover:bg-green-100 transition-colors border-l-4 border-green-500 border-t border-gray-200">
+                                <td class="p-4 align-top">
+                                    <span class="font-bold text-green-800 block mb-1"><i class="fas fa-vial mr-1"></i> Growth Test: LSA</span>
+                                    <span class="inline-block px-2 py-1 bg-green-200 text-green-800 text-xs font-bold rounded mb-3">Local Services Ads</span>
+                                    <span class="font-bold text-xl block text-green-700">TBD / Variable</span>
+                                    <span class="text-sm text-green-600">Pay-Per-Lead</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-green-800">
+                                    Google Guaranteed
+                                </td>
+                                <td class="p-4 align-top text-sm text-green-800">
+                                    <p class="mb-1"><strong>Targeting Setup:</strong> Zip codes & exact service categories (Cleaning, Repair, Heater).</p>
+                                    <p>Strict background check required.</p>
+                                </td>
+                                <td class="p-4 align-top text-sm text-green-800 font-medium">Bypass standard search ads to appear at the absolute top of the page. Extremely effective for urgent repair calls.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Meta Ads Setup (Tabular) -->
+            <div class="glass-card rounded-2xl border-t-4 border-blue-600 overflow-hidden shadow-sm">
+                <div class="p-6 md:p-8 bg-white border-b border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <h3 class="text-2xl font-bold flex items-center gap-3"><i class="fab fa-meta text-blue-600"></i> Meta Ads Execution Plan</h3>
+                    <div class="text-left md:text-right">
+                        <span class="block text-sm text-gray-500 font-semibold uppercase tracking-wider">Platform Budget</span>
+                        <span class="text-2xl font-bold text-blue-600">$5,400 / mo</span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-200">
+                                <th class="p-4 font-semibold text-gray-700 w-1/4">Campaign & Budget</th>
+                                <th class="p-4 font-semibold text-gray-700 w-1/5">Ad Set / Audience</th>
+                                <th class="p-4 font-semibold text-gray-700 w-1/3">Targeting Details</th>
+                                <th class="p-4 font-semibold text-gray-700">Strategic Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 bg-white">
+                            <!-- Campaign 1: Direct Lead Gen -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top border-l-4 border-blue-600 bg-blue-50/20">
+                                    <span class="font-bold text-gray-800 block mb-1">Direct Lead Gen</span>
+                                    <span class="inline-block px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded mb-3">Conversion / Leads</span>
+                                    <span class="font-bold text-xl block text-gray-800">$2,565</span>
+                                    <span class="text-sm text-gray-500">19% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    Advantage+ Core
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-2"><strong>Location:</strong> CA / Shingle Springs (25-65+)</p>
+                                    <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 text-xs">
+                                        <span class="font-bold text-gray-700 block mb-1">Match ANY of:</span>
+                                        Home Improvement, Cleaning, MRO, Outdoor Living<br>
+                                        <span class="font-bold text-brand-lightBlue block mt-2 mb-1">+ MUST ALSO MATCH:</span>
+                                        Open water swimming, Water treatment, Swimming Pool
+                                    </div>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Drive friction-less, immediate inquiries using auto-filled in-app Meta Lead Forms targeting verified pool owners.</td>
+                            </tr>
+
+                            <!-- Campaign 2: Retargeting (Expanded) -->
+                            <tr class="hover:bg-gray-50 transition-colors border-t border-gray-200">
+                                <td class="p-4 align-top border-l-4 border-purple-500 bg-purple-50/20" rowspan="2">
+                                    <span class="font-bold text-gray-800 block mb-1">Full Funnel Retargeting</span>
+                                    <span class="inline-block px-2 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded mb-3">Conversion</span>
+                                    <span class="font-bold text-xl block text-gray-800">$2,025</span>
+                                    <span class="text-sm text-gray-500">15% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700 border-b border-gray-50">
+                                    Digital Engagers
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">
+                                    <ul class="list-disc pl-4 space-y-1">
+                                        <li><strong>Site Traffic:</strong> All Visitors (180 Days)</li>
+                                        <li><strong>Social:</strong> FB + IG Page Engagers (180 Days)</li>
+                                        <li><strong>Video:</strong> Watched 25%+ of awareness videos</li>
+                                        <li><strong>Lead Drop-offs:</strong> Opened form but did not submit</li>
+                                    </ul>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600 border-b border-gray-50">Re-engage warm prospects who showed interest, overcoming hesitations to close the lead.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    CRM Reactivation
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-1"><strong>Source:</strong> Existing Customer List Upload</p>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Retarget past customers with new offers or discounts (e.g., equipment upgrades) to encourage repeat service.</td>
+                            </tr>
+
+                            <!-- Campaign 3: Brand Awareness -->
+                            <tr class="hover:bg-gray-50 transition-colors border-t border-gray-200">
+                                <td class="p-4 align-top border-l-4 border-gray-400 bg-gray-50/50">
+                                    <span class="font-bold text-gray-800 block mb-1">Brand Awareness</span>
+                                    <span class="inline-block px-2 py-1 bg-gray-200 text-gray-800 text-xs font-bold rounded mb-3">Video Views</span>
+                                    <span class="font-bold text-xl block text-gray-800">$810</span>
+                                    <span class="text-sm text-gray-500">6% of Total</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-gray-700">
+                                    Local Broad
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">
+                                    <p class="mb-1"><strong>Creative Focus:</strong> Customer satisfaction & before/after transformations.</p>
+                                    <span class="inline-block text-xs px-2 py-1 bg-gray-100 rounded text-gray-600 mt-1">Broad targeting in service areas</span>
+                                </td>
+                                <td class="p-4 align-top text-sm text-gray-600">Increase brand visibility locally and cheaply build up the "Video Engaged" audience for later retargeting.</td>
+                            </tr>
+
+                            <!-- Campaign 4: LAL Test -->
+                            <tr class="bg-green-50 hover:bg-green-100 transition-colors border-l-4 border-green-500 border-t border-gray-200">
+                                <td class="p-4 align-top">
+                                    <span class="font-bold text-green-800 block mb-1"><i class="fas fa-users mr-1"></i> Growth Test: LAL</span>
+                                    <span class="inline-block px-2 py-1 bg-green-200 text-green-800 text-xs font-bold rounded mb-3">Lookalike Audience</span>
+                                    <span class="font-bold text-xl block text-green-700">Scaling Budget</span>
+                                    <span class="text-sm text-green-600">Post-Launch</span>
+                                </td>
+                                <td class="p-4 align-top font-bold text-green-800">
+                                    1-3% LAL
+                                </td>
+                                <td class="p-4 align-top text-sm text-green-800">
+                                    <p class="mb-1"><strong>Seed Source:</strong> Nevergreen's Customer List</p>
+                                    <p><strong>Size:</strong> 1% - 3% similarity in CA</p>
+                                </td>
+                                <td class="p-4 align-top text-sm text-green-800 font-medium">Use Meta's algorithm to automatically find new users with identical purchasing behaviors as your best current clients.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Creative & Messaging -->
+        <section class="glass-card rounded-2xl p-8 mb-8">
+            <div class="flex justify-between items-center mb-6 border-b pb-2">
+                <h3 class="text-xl font-bold"><i class="fas fa-video text-brand-green mr-2"></i> Meta Video Ad Testing Strategy</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-brand-dark mb-3"><i class="fas fa-film text-brand-lightBlue mr-2"></i> High-Converting Formats</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><strong class="text-gray-800">The "Green-to-Clean" Timelapse:</strong> Highly satisfying visual transformations of dirty pools becoming crystal clear. Excellent for stopping the scroll.</li>
+                        <li><strong class="text-gray-800">Technician Walkthrough:</strong> Showcasing uniformed techs, branded trucks, and professional LSI chemical balancing (The "Anti-Splash & Dash").</li>
+                        <li><strong class="text-gray-800">Equipment Spotlight:</strong> Behind-the-scenes look at Hayward/Pentair installs for high-ticket repair targeting.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-brand-dark mb-3"><i class="fas fa-microphone-alt text-brand-lightBlue mr-2"></i> Hooks & Script Angles</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><i class="fas fa-play text-xs text-brand-green mr-1"></i> <strong class="text-gray-800">Hook 1 (Pain Point):</strong> "Tired of pool guys who just splash and dash? Here is how a true professional..."</li>
+                        <li><i class="fas fa-play text-xs text-brand-green mr-1"></i> <strong class="text-gray-800">Hook 2 (Authority):</strong> "Why luxury pools in California trust our specific LSI balancing method..."</li>
+                        <li><i class="fas fa-play text-xs text-brand-green mr-1"></i> <strong class="text-gray-800">Hook 3 (Urgency):</strong> "Pool heater making this noise? We are your certified warranty station."</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-brand-dark mb-3"><i class="fas fa-sliders-h text-brand-lightBlue mr-2"></i> Meta Best Practices</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li><i class="fas fa-mobile-alt text-gray-400 w-4"></i> <strong>Format:</strong> 9:16 (Reels/Stories) & 4:5 (Feed).</li>
+                        <li><i class="fas fa-stopwatch text-gray-400 w-4"></i> <strong>Duration:</strong> 10-15s for top-of-funnel, up to 30s for Retargeting.</li>
+                        <li><i class="fas fa-closed-captioning text-gray-400 w-4"></i> <strong>Accessibility:</strong> Heavy bold text overlays & subtitles (most users watch without sound).</li>
+                        <li><i class="fas fa-bullseye text-gray-400 w-4"></i> <strong>CTA:</strong> "$149 Diagnostic Visit" persistently on screen.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
